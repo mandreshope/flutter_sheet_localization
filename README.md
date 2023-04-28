@@ -8,12 +8,18 @@ Add the following to your `pubspec.yaml`:
 
 ```sh
 dependencies:
-  flutter_sheet_localization: <latest>
+  flutter_sheet_localization:
+    git:
+      url: git@github.com:hacnguyen1412/flutter_sheet_localization.git
+      path: flutter_sheet_localization
   flutter_localizations:
     sdk: flutter
 
 dev_dependencies:
-  flutter_sheet_localization_generator: <latest>
+  flutter_sheet_localization_generator: 
+    git:
+      url: git@github.com:hacnguyen1412/flutter_sheet_localization.git
+      path: flutter_sheet_localization_generator
   build_runner: <latest>
 ```
 
