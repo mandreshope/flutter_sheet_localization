@@ -62,7 +62,7 @@ import 'package:template_string/template_string.dart';
 
       final splits = languageCode.split(RegExp(r'[-_]'));
 
-      var key = 'Locale.fromSubtags(languageCode: \'${splits.first}\'';
+      var key = 'const Locale.fromSubtags(languageCode: \'${splits.first}\'';
       if (splits.length > 2) {
         key += ', scriptCode: \'${splits[1]}\'';
         key += ', countryCode: \'${splits[2]}\'';
