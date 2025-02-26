@@ -22,11 +22,9 @@ Future<void> main() async {
     input: node,
     name: 'Test',
   );
-  final dart = builder.buildImports() +
-      '\n' +
-      builder.build(
-        result.result.copyWith(name: 'Example'),
-      );
+  final dart = '${builder.buildImports()}\n${builder.build(
+    result.result.copyWith(name: 'Example'),
+  )}';
   await File('bin/result_yaml/labels.g.dart').writeAsString(dart);
 
   /// CSV
@@ -35,11 +33,9 @@ Future<void> main() async {
     '0',
     'Example',
   );
-  final csvDart = builder.buildImports() +
-      '\n' +
-      builder.build(
-        localizations,
-      );
+  final csvDart = '${builder.buildImports()}\n${builder.build(
+    localizations,
+  )}';
   await File('bin/result_csv/labels.g.dart').writeAsString(csvDart);
 }
 
