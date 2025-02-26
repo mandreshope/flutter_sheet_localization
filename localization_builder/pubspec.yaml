@@ -2,24 +2,24 @@ name: localization_builder
 description: A data class builder for localization.
 homepage: https://github.com/aloisdeniel/flutter_sheet_localization
 version: 0.15.7
-publish_to: 'none'
+publish_to: "none"
 
 environment:
-  sdk: '>=3.0.0 <4.0.0'
+  sdk: ">=3.0.0 <4.0.0"
   flutter: ">=2.0.0"
 
 dependencies:
   flutter:
-    sdk: flutter 
+    sdk: flutter
   template_string:
     git:
-      url: git@github.com:hacnguyen1412/flutter_sheet_localization.git
+      url: git@github.com:mandreshope/flutter_sheet_localization.git
       path: template_string
   recase: ^4.1.0
   yaml: ^3.1.1
   equatable: ^2.0.5
   collection: ^1.16.0
-  dart_style: ^2.2.4
+  dart_style: ^3.0.1
   logging: ^1.0.0
 
 dev_dependencies:
